@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio project for Business College Helsinki HTML and CSS3 course" />
+  <meta name="author" content="Eliza Nura" />
+  <meta name="keywords" content="HTML5, CSS3, Portfolio, kouluprojekti" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Elizan Kertaustehtävät</title>
+</head>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="../index.html">Elizan Kertaus tehtävät</a></div>
+      <nav>
+        <ul>
+          <li><a href="../lasku/index.html">Lasku</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <body>
+    <main>
+    <input type="number" id="l1" placeholder="Ensimmäinen arvo"><br><br>
+    <select name="laskutoimitus" id="laskutoimitus">
+        <option value="+">summa(+)</option>
+        <option value="-">vähennys(-)</option>
+        <option value="*">kertaa/tulos(*)</option>
+        <option value="/">jako(/)</option>
+    </select><br><br>
+    <input type="number" id="l2" placeholder="Toinen arvo..."><br><br>
+    <input type="button" value="laske" onclick="laskeArvot()">
+    <input type="number" id="tulos" placeholder="tulos!" disabled>
+  </main>
+  <script src="skriptit.js"></script>
+</body>
+
+</html>

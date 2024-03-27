@@ -1,0 +1,77 @@
+<!-- In this task, you see HTML table where are collected different input types with notes about the use of those. --> 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <title>Input types</title>
+  </head>
+  <style>
+    body,
+    input,
+    button {
+      font-family: "Dosis", sans-serif;
+      font-size: 16px;
+    }
+    table,
+    thead,
+    td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    thead {
+      background-color: coral;
+      color: white;
+    }
+    table {
+      margin: 20px;
+    }
+    .center {
+      text-align: center;
+      background: #ebebeb;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>Input example</td>
+          <td>Notes</td>
+        </tr>
+      </thead>
+      <tbody>
+        <h2>Form elements</h2>
+        <tr>
+          <td class="center" colspan="3">Input types:</td>
+        </tr>
+        <tr>
+          <td>type="button"</td>
+          <td><input type="button" value="klikkaa" /></td>
+          <td>Needs value attribute for button text</td>
+        </tr>
+        <tr>
+          <td>tyoe="checkbox" />jotakin tekstiä</td>
+          <td><input type="color" value="#ff0000" /></td>
+          <td>
+             with value you can set default color. <br />
+             Type"color" is not supported in internet Explorer 11 and erlier versions or
+
+          </td>
+
+          </tr>
+          <tr>
+            <td>Texttarea:</td>
+            <td><textarea name="" id="" cols="30" row="10"></textarea></td>
+            <td>Tekstialue</td>
+          </tr>
+          <tr></tr>
+
+
+
+          </tr>
+     </tbody>
+    </table>
+  </body>
+</html>

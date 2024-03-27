@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laske luvuilla</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="logo"><a href="../../index.html">Elizan Javascript-ohjelmia</a></div>
+            <nav>
+                <ul>
+                    <li><a href="../../../ohjelmointi/teht/index.html">Tehtäviä</a></li>
+                    <li><a href="../../../ohjelmointi/luvut/index.html">Luvut-ohjelma</a></li>
+                    <li><a href="../../../ohjelmointi/robotto/index.html">Robotto-ohjelma</a></li>
+                    <li><a href="../../../ohjelmointi/ventti/index.html">Ventti-ohjelma</a></li>
+                    <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="hero-banner">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form name="form1" id="form1" method="post">
+            <label for="a1">Anna luku 1.</label>
+            <input type="number" id="a1" name="a1" min="1" max="10" required>
+            <br>
+            <br>
+
+            <label for="b1">Anna luku 2.</label>
+            <input type="number" id ="b1" name="b1" min="1" max="10" required>
+            <br>
+            <br>
+
+            <input type="button" value="Laske" onclick="tulokset()"></input>
+            <input type="button" value="Tyhjennä" onclick="tyhjenna()">
+            <p><span id="summa"></span></p>
+            <p><span id="ero"></span></p>
+            <p><span id="tulo"></span></p>
+            <p><span id="jako"></span></p>
+            <p><span id="koko"></span></p>
+            <p><span id="luvut"></span></p>
+        </form>
+
+    </main>
+
+    <script src="skriptit.js"></script>
+</body>
+
+</html>

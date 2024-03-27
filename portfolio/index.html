@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Eliza Nura" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, kouluprojekti" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="albaniaicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Elizan portfolio - portfolio</title>
+    <style>
+      h2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 3px rgb(82, 35, 99);
+        font-family: 'Brush Script MT', cursive;
+        font-size: 40px;
+        }
+    </style>
+
+    <style>
+      .teksti {
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+      </style>
+
+    <style>
+     h1 {
+      text-shadow: 2px 2px 5px rgb(82, 35, 99);
+    }
+    </style>
+  </head>
+<body>
+  <header>
+    <div class="main_nav">
+      <div class="container">
+        <div class="logo"><a href="index.html">Eliza Nura</a></div>
+        <nav>
+          <ul>
+            <li><a href="index.html#projects">Projektit</a></li>
+            <li><a href="index.html#future">Tietoa minusta</a></li>
+            <li><a href="index.html#skills">Taidot</a></li>
+            <li><a href="index.html#footer">Yhteystiedot</a></li>
+            <li><a href="galleria.html#">Galleria</a></li>
+            <li><a href="icon.html">Animaatio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="hero-banner">
+      <h2>Tervetuloa portfoliooni</h2>
+    </div>
+  </header>
+    <section id="projects">
+        <h2>Projektit</h2> <br>
+          <div class="projects_boxes">
+
+            <div class="box">
+              <img src="kakkutaustakuva.jpg" alt="kuva" />
+              <h3>Hanna kakku ja pullat</h3>
+              <p><em>HTML ja CSS toteutus</em></p>
+              <a href="https://public.bc.fi/s2101036/hannankakku/">Sivusto</a>
+            </div>
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?car" alt="time" />
+              <h3>Flex esimerkki</h3>
+              <p><em>Display Flex</em></p>
+              <a href="https://public.bc.fi/s2101036/harjoitukset/flex/">Sivusto</a>
+            </div>
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?plane" alt="time" />
+              <h3>Responsiivisuus</h3>
+              <p><em>Media kyselyt</em></p>
+              <a href="https://public.bc.fi/s2101036/harjoitukset/resp/">Sivusto</a>
+            </div>
+          </div>
+    </section>
+  <main>
+    <div id="future">
+      <div class="container">
+        <h2>Tietoa minusta</h2>
+            <p class="teksti">
+              Minun nimeni on Eliza Nura. Olen 16-vuotias tyttö vantaalta.
+              Olen kotoisin Albaniasta, mutta olen syntynyt suomessa. 
+              Opiskelen Tieto ja viestinnän alassa, valitsin tämän alan
+              koska olen aina ollut kiinostunut miten nettisivuja ja muita tietokone
+              sisältäviä animaatiota tehdään. Tykkään tästä alasta todella paljon, 
+              joka päivä opin jotain uutta.
+            </p>
+      </div>
+    </div>
+  </main>   
+  <section id="skills">
+    <div class="container">
+      <h2>Taidot</h2>
+      <div class="skills_group">
+        <div class="skill">
+          <i class="material-icons md-46">pets</i>
+          <p>Kissa ihminen</p>
+          <progress value="100" max="100">32%</progress>
+        </div>
+        <div class="skill">
+          <i class="material-icons md-46">language</i>
+          <p>Kielitaito</p>
+          <progress value="70" max="100">32%</progress>
+        </div>
+        <div class="skill">
+          <i class="material-icons md-46">smart_toy</i>
+          <p>Fiksuus</p>
+          <progress value="100" max="100">32%</progress>
+        </div>
+        <div class="skill">
+          <i class="material-icons md-46">grade</i>
+          <p>Mahtavuus</p>
+          <progress value="100" max="100">32%</progress>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer id="footer">
+  <div class="container">
+    <h2>Ota yhteyttä</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Nimi:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Sähköposti:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="message">Viestisi:</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <button type="submit">Lähetä viesti</button>
+    </form>
+    <p class="copyright">Copyright &copy; Elizan Website 2021</p>
+  </div>
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
+

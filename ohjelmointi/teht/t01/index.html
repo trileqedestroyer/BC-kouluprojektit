@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Eliza Nura" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, kouluprojekti" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Elizan Javascript sivu</title>
+  </head>
+<body>
+    <header>
+          <div class="container">
+            <div class="logo"><a href="../../index.html">Elizan Javascript-ohjelmia</a></div>
+            <nav>
+                  <ul>
+                      <li><a href="../../teht/index.html">Tehtäviä</a></li>
+                      <li><a href="../../luvut/index.html">Luvut-ohjelma</a></li>
+                      <li><a href="../../robotto/index.html">Robotto-ohjelma</a></li>
+                      <li><a href="../../ventti/black-jack-master/index.html">Ventti-ohjelma</a></li>
+                  </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+    <div id="valo">
+
+        <h2>Mitä JavaScript voi tehdä?</h2>
+
+        <p id="demo">JavaScript voi muuttaa HTML sisältöä.</p>
+        <button type="button" onclick='document.getElementById("demo").
+        innerHTML = "Moi JavaScript!"'>Klikkaa mua!</button>
+        <hr>
+        <br>
+        <p>Muuttaa HTML atribuutin arvoa.</p>
+        <button onclick="document.getElementById('myImage').
+        src='pic_bulbon.gif'">Valo päälle</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').
+        src='pic_bulboff.gif'">valo pois päältä</button>
+        <hr>
+        <p id="demo1">JavaScript voi muuttaa HTML elementin tyylin .</p>
+        <button type="button" onclick="document.getElementById('demo1').
+        style.fontSize='35px'">Klikkaa mua!</button>
+        <hr>
+        <p id="demo2">JavaScript voi piilottaa HTML elementin.</p>
+        <button type="button" onclick="document.getElementById('demo2').
+        style.display='none'">Klikkaa mua!</button>
+    </div>
+</body>
+        
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>
+    </head>
+  <title>Elizan Kertaus sivu</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="main_nav">
+      <div class="container">
+        <div class="logo"><a href="../../kertaus/index.html">Elizan Kertaustehtäviä</a></div>
+        <nav>
+          <ul>
+            <li><a href="../ventti/index.html">Ventti-ohjelma</a></li>
+            <li><a href="../../kertaus/lasku/index.html">lasku</a></li>
+          </ul>
+        </nav>
+
+  </header>
+  <body>
+
+    <h2>Jakajan kortit: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+        <img id="hidden" src="./cards/BACK.png">
+    </div>
+
+    <h2>Pelaajan kortit: <span id="your-sum"></span></h2>
+    <div id="your-cards"></div>
+
+    <br>
+    <button id="hit">Nosta</button>
+    <button id="stay">Jää</button>
+    <button id="New" onClick="window.location.reload();"> Uusi Peli </button>
+    
+</body>
+  <script src="skriptit.js"></script>
+</body>
+
+</html>

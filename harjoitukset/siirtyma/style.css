@@ -1,0 +1,79 @@
+:root {
+  --secondary-color: steelblue;
+  --neutral-color: cornsilk;
+  --dark-color: #333;
+  --light-color: #fff;
+  --font: "Comfortaa", cursive;
+}
+body {
+  background: var(--neutral-color);
+  font-family: var(--font);
+  color: var(--light-color);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.item {
+  background: rgb(18, 109, 123);
+  min-height: 300px;
+  border-radius: 3px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 1px var(--light-color), 3px 3px 5px var(--dark-color);
+  transition: all 1s ease-in-out;
+}
+.item:hover {
+  box-shadow: inset 0 0px 500px var(--dark-color);
+  background: var(--secondary-color);
+}
+.item2 {
+  background: rgb(44, 209, 44);
+  min-height: 300px;
+  border-radius: 3px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 1px var(--light-color), 3px 3px 5px var(--dark-color);
+  transition: all 2s ease-in-out;
+}
+.item2:hover {
+  box-shadow: inset 0 0px 500px var(--dark-color);
+  background: rgba(44, 209, 44, 0.445);
+}
+.item3 {
+  background: rgb(209, 34, 34);
+  min-height: 300px;
+  border-radius: 3px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 1px var(--light-color), 3px 3px 5px var(--dark-color);
+  transition: all 3s ease-in-out;
+}
+.item3:hover {
+  box-shadow: inset 0 0px 500px var(--dark-color);
+  background: rgba(209, 34, 34, 0.425);
+}
+ 
+.fake {
+  height: 100px;
+  width: 100px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px var(--dark-color), inset 0px 0px 5px var(--dark-color);
+  transition: height 2s, width 2s;
+}
+ 
+.fake:hover {
+  height: 400px;
+  width: 400px;
+}

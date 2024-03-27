@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Lato", sans-serif;
+  }
+h2{
+    color: rgb(255, 255, 255);
+}
+  
+
+
+  /**************** Main area ****************/
+  
+  #galleria,
+  #projects,
+  #about,
+  #skills 
+  #icon {
+    padding: 3rem;
+    min-height: 500px;
+  }
+  
+  #projects .projects_boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #projects .box {
+    background-color: rgb(255, 255, 255);
+    width: 32%;
+    padding: 1rem;
+    border-radius: 2px;
+    border: Gainsboro 2px solid;
+  }
+  
+  #projects .box h3 {
+    margin-bottom: 1rem;
+  }
+  #projects .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  progress[value] {
+    height: 1.5rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+  }
+
+  
+  /**************** Form ****************/
+  
+  footer form {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+  }
+  
+  footer form .form-group {
+    margin: 2rem 0;
+    display: flex;
+  }
+  
+  footer form label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  footer form .form-group input,
+  footer form .form-group textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    font-size: 1rem;
+  }
+  
+  
+  /**************** Tablet support ****************/
+  
+  @media (max-width: 899px) {
+    header nav ul {
+      text-align: right;
+    }
+    #skills .skills_group {
+      margin-top: 2rem;
+    }
+  
+    .skill {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    footer form {
+      width: 80%;
+      text-align: center;
+    }
+    footer form .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    footer form .form-group input,
+    footer form .form-group textarea {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  
+  /**************** Mobile support ****************/
+  @media (max-width: 576px) {
+
+    #hero-banner {
+      height: 100vh;
+    }
+  
+    #hero-banner h2 {
+      font-size: 1.5rem;
+    }
+    #projects,
+    #about,
+    #skills,
+    #gallery {
+      padding: 1rem;
+    }
+    #projects .projects_boxes {
+      display: block;
+    }
+    #projects .box {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    #about img {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+    footer form .form-group {
+      display: block;
+    }
+  
+    #backToTop {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+    }
+  }

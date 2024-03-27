@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio project for Business College Helsinki HTML and CSS3 course" />
+  <meta name="author" content="Eliza Nura" />
+  <meta name="keywords" content="HTML5, CSS3, Portfolio, kouluprojekti" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Elizan Javascript sivu</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="../index.html">Elizan Kertaus tehtäviä</a></div>
+      <nav>
+        <ul>
+          <li><a href="../../kertaus/index.html">Tehtäviä</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <body>
+      <BR><BR><BR>
+      <form name="lomake">
+          <label for="tilinro">Tilinumero:</label>
+          <input type="text" id="tilinro" name="tilinumero" required>
+          <p id="molväärin"></p>
+          <p id="tiliväärin"></p>
+          <br>
+          <label>Nimi:</label>
+          <input type="text" id="nimi" required><br>
+          <p id="molväärin2"></p>
+          <p id="nimiväärin"></p>
+          <p id="tyhja"></p>
+          <br>
+          <button type="button" id="myButton" onclick="tarkistaTili()" value="submit">Jatka</button><br>
+          <p id="oikein"></p>
+          <br>
+          <div id="piilota" style="display: none;">
+              <label>Maksun summa:</label>
+              <input type="number" id="summa" required><br>
+              <br>
+              <label>Maksupäivä:</label>
+              <input type="date" id="paiva" required><br>
+              <br>
+              <label>Viitenumero:</label>
+              <input type="text" id="viitenro" name="viitenro" value=""><br>
+              <p id="viite"></p>
+              <br>
+              <label>Viesti:</label>
+              <input type="text" id="viesti" name="viesti" value=""><br>
+              <p id="viesti2"></p>
+              <br>
+              <label>Avainluku:</label>
+              <input type="text" id="aluku" required><br>
+              <p id="aoikein"></p>
+              <p id="aväärin"></p>
+              <p id="molemmat"></p>
+              <br>
+              <button type="button" value="Maksa" name="button" id="vahvista" onclick="avainluku()" >Suorita maksu</button><br>
+          </div>
+      </form>
+      <p id="suoritettu"></p>
+  </body>
+  
+        <script src="skriptit.js"></script>
+</body>
+
+</html>

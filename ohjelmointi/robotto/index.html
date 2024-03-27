@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio project for Business College Helsinki HTML and CSS3 course" />
+  <meta name="author" content="Eliza Nura" />
+  <meta name="keywords" content="HTML5, CSS3, Portfolio, kouluprojekti" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Elizan Javascript sivu</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="../../ohjelmointi/robotto/index.html">Elizan Javascript-ohjelmia</a></div>
+      <nav>
+        <ul>
+          <li><a href="../../ohjelmointi/teht/index.html">Tehtäviä</a></li>
+          <li><a href="../../ohjelmointi/luvut/index.html">Luvut-ohjelma</a></li>
+          <li><a href="../robotto/index.html">Robotto-ohjelma</a></li>
+          <li><a href="../../ohjelmointi/ventti/black-jack-master/index.html">Ventti-ohjelma</a></li>
+          <li><a href="../../ohjelmointi/Dom/index.html">Dom-ohjelma</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <p>Robotti vilkuttaa komennolla robotto.wave();</p>
+    <p>Robotti hyppii komennolla robotto.jump();</p>
+    <p>kävelee komennolla robotto.walk();</p>
+    <br><br>
+    <p>Kun haluat robotin lopettavan, paina "Lopeta"</p>
+ <br>
+    <input type="text" id="kasky">
+    <input type="button" id="laheta" value="Suorita" onclick="kaskyt()">
+    <input type="button" id="tyhjenna" value="Lopeta" onclick="pois()"><br>
+    <img class="robotto" id="stand" src="robotto.png">
+    <div id="kuva"></div>
+  </main>
+  <script src="skriptit.js"></script>
+  </body>
+</html>

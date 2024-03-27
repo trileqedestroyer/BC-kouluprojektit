@@ -1,0 +1,32 @@
+#game {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kortti {
+  width: 100px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.h {
+  color: red;
+}
+
+.d {
+  color: red;
+}
+
+.c {
+  color: black;
+}
+
+.s {
+  color: black;
+}

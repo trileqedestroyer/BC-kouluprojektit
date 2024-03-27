@@ -1,0 +1,7 @@
+ ja tässä luvut kansion index.html linkit:<ul>
+<li><a href="../teht/index.html">Tehtäviä</a></li>
+<li><a href="#">Luvut-ohjelma</a></li>
+<li><a href="../robotto/index.html">Robotto-ohjelma</a></li>
+<li><a href="../ventti/index.html">Ventti-ohjelma</a></li>
+<li><a href="../index.html#footer">Yhteystiedot</a></li>
+</ul>

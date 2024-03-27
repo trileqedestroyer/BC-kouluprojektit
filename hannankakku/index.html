@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- charset määrittää merkistön -->
+  <meta charset="UTF-8" />
+  <!-- viewport on responsiivisuuden perusta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hannan kakku ja pulla</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- google-fontit saa tällä tavalla käyttöönsä -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet" />
+  <style>
+    h1 {
+      text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+    </style>
+
+  <style>
+  h4 {
+    color:rgb(201, 100, 159);
+  text-shadow: 3px 3px 4px black, 0 0 25px rgb(0, 0, 0), 0 0 7px rgb(0, 0, 0);
+    font-size: 30px;
+  }
+  </style>
+  <style>
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="main_nav">
+      <div class="logo"><a href="#"><h1>Hannan Kakku ja Pullat</h1></a></div>
+        <nav>
+          <ul>
+            <h1>
+            <li><a href="#projects">Kakut</a></li>
+            <li><a href="#about">Yhteystiedot</a></li>
+          </h1>
+          </ul>
+        </nav>
+      </div>  
+    </div>
+    <div id="hero-banner">
+      <h4>Hannan kakku ja pulla on uusi Helsingin Vallilassa toimiva kakkupuoti. Liikkeen toimitusjohtajana toimii Hanna Heikkilä</h4>
+    </div>
+  </header> 
+  <main>
+    <section id="projects">
+      <div class="container">
+        <p class="p3">Kakut</p>
+        <div class="projects_boxes">
+          <div class="box">
+            <img
+              src="karhu.jpg" alt="karhu kakku"
+            />
+            <h3>27€</h3>
+            <p><em> Karhu kakku</em></p>
+          </div>
+          <div class="box">
+            <img
+              src="Porkkanat.jpg" alt="porkkana kakku"
+            />
+            <h3>32€</h3>
+            <p><em> Porkkana kakku</em></p>
+          </div>
+          <div class="box">
+            <img
+              src="Ruusut.jpg" alt="ruusu kakku"
+            />
+            <h3>28€</h3>
+            <p><em> Ruusu kakku</em></p>
+          </div>
+          <div class="box">
+            <img src="Kukat.jpg" alt="kukka kakku" />
+            <h3>30€</h3>
+            <p><em>Kukka kakku</em></p>
+          </div>
+          <div class="box">
+            <img
+              src="Leppakerttu.jpg " alt="leppakerttu"
+            />
+            <h3>25€</h3>
+            <p><em>Leppäkerttu kakku</em></p>
+       
+      </div>
+    </section>
+  </main>
+  <footer id="about">
+    <div class="container">
+      <p class="p3">Ota yhteyttä</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Nimi:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Sähköpostiosoite:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Viesti minulle:</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Lähetä viesti</button>
+      </form>
+      <p class="copyright">Copyright &copy; Minun Websivu 2021</p>
+    </div>
+  </footer>
+</body>
+</html>

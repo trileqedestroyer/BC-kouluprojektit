@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+
+}
+
+#my_id {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+.my_class {
+  font-family: verdana, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li:hover {
+  background-color: chocolate;
+  padding: 8px;
+}
+.valo {
+  height: 89vh;
+  padding-top: 0rem;
+  justify-content: right;
+  align-items: right;
+  position: relative;
+}
+/**************** Header area ****************/
+  
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  position: fixed;
+  z-index: 1 ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: rgb(37, 37, 44);
+  
+}
+
+header .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  }
+
+header nav ul li a,
+.logo a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0 1rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  display: flex;
+  color:chocolate
+}
+/**************** Hero-Banner area ****************/
+
+#hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-banner h2 {
+  font-size: 5rem;
+  color: #333;
+  text-align: center;
+} 
+
+#hero-banner p{
+  color:rgb(248, 120, 0);
+  font-size:60px;
+}
+
+/**************** Main area ****************/
+
+main {
+  text-align: center;
+  height: 780px;
+}
+h2 {
+  text-align: center;
+}
+
+/**************** Tablet support ****************/
+
+@media (max-width: 899px) {
+  header nav ul {
+    text-align: right;
+  }
+  #skills .skills_group {
+    margin-top: 2rem;
+  }
+
+  .skill {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  footer form {
+    width: 80%;
+    text-align: center;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/**************** Mobile support ****************/
+@media (max-width: 576px) {
+  header .container {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  #hero-banner h2 {
+    font-size: 1.5rem;
+    top: 30vh;
+    position: relative;
+  }
+  header nav ul {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  header nav ul li {
+    padding: 1rem 3rem;
+  }
+
+  #hero-banner {
+    height: 100vh;
+  }
+
+  #hero-banner h2 {
+    font-size: 1.5rem;
+  }
+  #projects,
+  #about,
+  #skills,
+  #gallery {
+    padding: 1rem;
+  }
+
+  #gallery {
+    margin-top: 65vh;
+    min-height: 0;
+  }
+  #projects .projects_boxes {
+    display: block;
+  }
+  #projects .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  footer form .form-group {
+    display: block;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+  }
+}
